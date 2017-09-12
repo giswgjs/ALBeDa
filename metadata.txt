@@ -1,0 +1,101 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=ALKIS Bestandsdatenauskunft (ALBeDA)
+qgisMinimumVersion=2.8
+description=Bestandsdatenauskunft ALKIS Flurstücke
+version=0.9.72b
+author=GIS_WG
+email=info@giswg.de
+
+about=Beauskunftung von Eigentümerinformationen von mit dem norGIS ALKIS-Import Tool eingespielten ALKIS Flurstücken (ax_flurstueck 11001)
+
+tracker=giswg.de
+repository=giswg.de
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+changelog=0.9.72b
+    - aktive Tabs beim nächsten Start wiederherstellen
+    0.9.71b
+    - Änderung GUI Flurstücksuche
+    - zähler, nenner, gmk können jeweils offen bleiben
+    - Allgemeiner Ansatz für Gemarkungsnamen
+    - Ergebnisausgabe mit Gemarkungsschlüssel:Flurstücksanzahl
+    0.9.70b
+    - Änderung GUI Koordinatensuche:
+        - Eingabefelder adaptieren ans Koordinatenformat
+        - Koordinaten auf Knopfdruck hervorheben
+        - Button Auswahl geteilt in Gehe zu... und Auswahl
+        - Dezimalpunkt und -komma verwendbar
+        - Wertebereiche bei d/m/s beachten
+    - Bugfix: Problem mit NULL-nennern bei Abfrage über Koorinaten
+    0.9.61b
+    - Bugfix: Problem mit NULL-nennern bei Abfrage über Adresse
+    0.9.60b
+    - Änderung GUI Adresssuche
+    - Strasse auf Knopfdruck hervorheben
+    0.9.54b
+    - Bugfix: Geometrieoperation mit untersch. SRIDs bei Auskunft Flst an Koordinaten
+    - Bugfix: Fehler 'gehe zu' wenn Straße aus Combobox gewählt wird
+    0.9.53b
+    - Flurstueckskennzeichen mit ausgeben
+    0.9.52b
+    - Konfiguration von norGIS ALKIS Plugin automatisch anpassen
+    - reagieren, wenn Layer ausserhalb von ALBeDA hinzugefügt oder entfernt werden (kommunales Grundeigentum bzw. ax_flurstueck)
+    - funktioniert mit allen Ziel CRS
+    0.9.51b
+    - Erkennt komm. Flurstueck Layer beim Start (doppeltes Zuschalten ausgeschlossen)
+    - Koordinaten vertauschen
+    - Refresh Legende wenn Farbe der kommunalen Flst geändert wird
+    0.9.50b
+    - Bedienelemente inaktiv, wenn keine db Verbindung ausgewählt oder kein Flurstücklayer vorhanden
+    - Farbänderung für kommunales Grundeigentum
+    - transparente Farben auch auf Buttons
+    0.9.43b
+    - Bugfix: erkennung der ax_flurstueck Layer unter bestimmten Bedingungen nicht eindeutig (alkis, alkis_neu)
+    - Bugfix: hinzufügender komm FLst gleich nach Pluginstart verursachte Fehler
+    - Bei Adresssuch / HNr XOR deaktiviert (muss als Funktion noch implementiert werden)
+    - Hinweis auf fehlerhafte Datenbankverbindungen beim Plugin Start
+    0.9.42b
+    - Bugfix: Problem mit NULL-nennern bei direkter Abfrage
+    - ALKIS Kataloge in eig. Modul ausgelagert
+    - Koordinatensuche in eig. Tab
+    - Widgetbezeichnungen vereinheitlicht
+    0.9.41b
+    - Bugfix: albeda/dbconname existiert noch nicht, Fallunterscheidung für 0,1 oder n ALKIS Datenbanken
+    - Bugfix: Kommunale Flurstücke dürfen nicht als Auskunftslayer erkannt werden
+    0.9.40b
+    - Option zum Einblenden der städtischen Flst.
+    0.9.37b
+    - horizontaler Scrollbalken bei Baumansicht
+    - Auswahl Koordinatenformat und EPSG in QSetting schreiben und wiederherstellen
+    0.9.33b
+    - Flurstück an Koordinaten Suchen
+    0.9.31b
+    - Beginn changelog ;-)
+    - Fehler bei Flurstücken mit Nenner NULL behoben (sollte mit 0 und NULL funktionieren)
+    Vor 0.9.30
+    - nicht dokumentiert
+
+# Tags are comma separated with spaces allowed
+tags=ALKIS, Eigentümer, Flurstück, Buchauskunft
+
+homepage=giswg.de
+category=Plugins
+icon=icon.png
+
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

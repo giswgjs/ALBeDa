@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ALBeDa.iml" filepath="$PROJECT_DIR$/.idea/ALBeDa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BBBBPlanung/.idea/BBBBPlanung.iml" filepath="$PROJECT_DIR$/../BBBBPlanung/.idea/BBBBPlanung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ErFinden/.idea/ErFinden.iml" filepath="$PROJECT_DIR$/../ErFinden/.idea/ErFinden.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../QGis2Doc/.idea/QGis2Doc.iml" filepath="$PROJECT_DIR$/../QGis2Doc/.idea/QGis2Doc.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlBADockWidgetBase</class>
+ <widget class="QDockWidget" name="AlBADockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1882</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ALBeDA - ALKIS Bestandsdatenauskunft</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTabWidget" name="tw_suche_auswahl">
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="tab_login">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <attribute name="title">
+            <string>Login</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Nutzer</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit_3"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Passwort</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_4"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QToolButton" name="toolButton">
+                <property name="text">
+                 <string>!</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_karte">
+           <attribute name="title">
+            <string>Karte</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QPushButton" name="pb_bestand_sel">
+              <property name="text">
+               <string>Bestandsdaten zu gewählten Flurstücken</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_anlieger">
+              <property name="text">
+               <string>Anlieger zu gewählten Flurstücken</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>187</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_add_komm_flst">
+              <property name="text">
+               <string>Städtische Flurstücke zur Karte hinzufügen</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Koord.</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_8" columnstretch="0,0">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_17">
+                <property name="text">
+                 <string>Format</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QComboBox" name="cb_crd_fmt"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="cb_epsg"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>EPSG</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gl_coords" columnstretch="1,0,0,0,0,0,0,0">
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>°</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="le_lat">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="maxLength">
+                 <number>3</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <widget class="QToolButton" name="tb_switch_coord">
+                <property name="font">
+                 <font>
+                  <family>Wingdings</family>
+                  <pointsize>8</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 8pt &quot;Wingdings&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>ô</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>x/Rechtswert/Länge</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>y/Hochwert/Breite</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="le_lon">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="maxLength">
+                 <number>3</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>'</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QLineEdit" name="lineEdit_6"/>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="lineEdit_5"/>
+              </item>
+              <item row="0" column="6">
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>''</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="7">
+               <widget class="QToolButton" name="tb_blink_coord">
+                <property name="styleSheet">
+                 <string notr="true">font: 8pt &quot;Wingdings&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>¶</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QPushButton" name="pb_goto_coord">
+                <property name="text">
+                 <string>Gehe zu...</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_sel_flst_coords">
+                <property name="text">
+                 <string>Auswahl</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_query_flst_coords">
+                <property name="text">
+                 <string>Abfrage</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_flstnr">
+           <attribute name="title">
+            <string>Flst.Nr.</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="le_nenner"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Zähler</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Gemarkung</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="cb_gemarkung"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="le_zaehler"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Nenner</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QTableWidget" name="tw_flst_livesearch">
+              <column>
+               <property name="text">
+                <string>Gemarkung</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Flurstücke</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>¶</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Wingdings</family>
+                </font>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Auswahl</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="pb_flst_goto">
+                <property name="text">
+                 <string>Gehe zu...</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_flst_auswahl">
+                <property name="text">
+                 <string>Auswahl</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_flst_abfrage">
+                <property name="text">
+                 <string>Abfrage</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_adresse">
+           <attribute name="title">
+            <string>Adressen</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="5" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QPushButton" name="pb_show_hnr">
+                <property name="text">
+                 <string>Hausnummern</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_get_flst_from_hnr">
+                <property name="text">
+                 <string>Flurstücke</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="4" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>Hausnummern</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_17">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="margin">
+                <number>10</number>
+               </property>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QCheckBox" name="cb_hnr_odd">
+                   <property name="text">
+                    <string>ungerade</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="cb_hnr_even">
+                   <property name="text">
+                    <string>gerade</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton_AND">
+                   <property name="text">
+                    <string>UND</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton_OR">
+                   <property name="text">
+                    <string>ODER</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radioButton_XOR">
+                   <property name="text">
+                    <string>XODER</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>Hnr. von</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_hnrvon"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>bis</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_hnrbis"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>Hnr.-Liste</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_hnrList"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>Weg- oder Straßenname</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_16">
+               <property name="spacing">
+                <number>13</number>
+               </property>
+               <property name="margin">
+                <number>10</number>
+               </property>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="cb_str"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>Straße</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QToolButton" name="tb_goto_str">
+                   <property name="styleSheet">
+                    <string notr="true">font: 8pt &quot;Wingdings&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>ð</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="le_str"/>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="l_str_weg_treffer">
+                   <property name="text">
+                    <string>#Treffer</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QToolButton" name="tb_blink_str">
+                   <property name="styleSheet">
+                    <string notr="true">font: 8pt &quot;Wingdings&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>¶</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_eigentuemer">
+           <attribute name="title">
+            <string>Eigentümer</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Nachname/Firma</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit_nachname"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Vorname</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_vorname"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QCheckBox" name="cb_clip_to_extent">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>Kartenausdehung</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="cb_3rd_beg_recht">
+                <property name="text">
+                 <string>Beg.Rechte</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QListWidget" name="listWidget_eigentum_alle"/>
+              </item>
+              <item>
+               <widget class="QListWidget" name="listWidget_eigentum_3rd_recht">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QPushButton" name="pushButton_dummy">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>----</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_find_person">
+                <property name="text">
+                 <string>Suchen</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_clear_eigentum">
+                <property name="text">
+                 <string>Säubern</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_buchungsblatt">
+           <attribute name="title">
+            <string>Buchungsblatt</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTabWidget" name="tw_result_setup">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_baum">
+        <attribute name="title">
+         <string>Baumansicht</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QTreeWidget" name="treeWidget">
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="columnCount">
+            <number>1</number>
+           </property>
+           <attribute name="headerDefaultSectionSize">
+            <number>2000</number>
+           </attribute>
+           <attribute name="headerMinimumSectionSize">
+            <number>1017</number>
+           </attribute>
+           <attribute name="headerStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string notr="true">Flurstück</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton_gotoTree">
+             <property name="text">
+              <string>Gehe zu</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_zoomTree">
+             <property name="text">
+              <string>Zoom auf</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_selectTree">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Auswahl erzeugen</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_cleanTree">
+             <property name="text">
+              <string>Säubern</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_exportTree">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Export...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_tabelle">
+        <attribute name="title">
+         <string>Tabellenansicht</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="columnCount">
+            <number>16</number>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Flurstück</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Kennzeichen</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Lfd. Nr.</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Anteil</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Amtl.Fläche [m²]</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Buchungsblatt</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Buchungsart</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Lfd. Nr. DIN 1421</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Anrede</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Zusatz</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Familienname</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Vorname</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Geb.Dat.</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Straße</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PLZ Wohnort</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Abt. II</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_gotoTable">
+             <property name="text">
+              <string>Gehe zu</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_zoomTable">
+             <property name="text">
+              <string>Zoom auf</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_selectTable">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Auswahl erzeugen</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_cleanTable">
+             <property name="text">
+              <string>Säubern</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_exportTable">
+             <property name="text">
+              <string>Export...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_setup">
+        <attribute name="title">
+         <string>Einstellungen</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QTabWidget" name="tw_setup">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_9">
+            <attribute name="title">
+             <string>Datenbank</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Datenbankverbindung</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBox_dbConnections"/>
+               </item>
+               <item row="0" column="2">
+                <widget class="QPushButton" name="pushButton_dbUpdate">
+                 <property name="text">
+                  <string>aktualisieren</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>ALKIS Flurstück Layer</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_ax_flst_layer"/>
+               </item>
+               <item row="1" column="2">
+                <widget class="QPushButton" name="pushButton_axflst_det">
+                 <property name="text">
+                  <string>bestimmen</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_10">
+            <attribute name="title">
+             <string>Farben</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="title">
+                <string>Karte</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,1,1">
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pb_col_highlight_hnr">
+                  <property name="text">
+                   <string>Hausnummern</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>Opak</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="hs_col_opac_highlight_flst">
+                    <property name="maximum">
+                     <number>255</number>
+                    </property>
+                    <property name="value">
+                     <number>64</number>
+                    </property>
+                    <property name="sliderPosition">
+                     <number>64</number>
+                    </property>
+                    <property name="tracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>8</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="1">
+                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                  <item>
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>Opak</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="hs_col_opac_highlight_hnr">
+                    <property name="maximum">
+                     <number>255</number>
+                    </property>
+                    <property name="value">
+                     <number>64</number>
+                    </property>
+                    <property name="sliderPosition">
+                     <number>64</number>
+                    </property>
+                    <property name="tracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>8</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pb_col_highlight_flst">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>Flurstücke</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="pb_col_komm_flst">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Städt. Flurstück</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>Opak</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="hs_col_opac_kommflst">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="maximum">
+                     <number>255</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>1</number>
+                    </property>
+                    <property name="value">
+                     <number>64</number>
+                    </property>
+                    <property name="tracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="tickPosition">
+                     <enum>QSlider::TicksBelow</enum>
+                    </property>
+                    <property name="tickInterval">
+                     <number>8</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="title">
+                <string>Tabelle</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pb_col_headers">
+                  <property name="text">
+                   <string>Kopfzeilen</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pb_col_tab_bg">
+                  <property name="text">
+                   <string>Tabellenhintergrund</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="pb_col_alt_flst">
+                  <property name="text">
+                   <string>Alterierende Hervorhebung der Flurstücke</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_11">
+            <attribute name="title">
+             <string>Abfrage</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QCheckBox" name="cb_vorsicht">
+               <property name="text">
+                <string>Bei Bestandsdatenabfrage vorsichtig sein</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_highlight_hnr">
+               <property name="text">
+                <string>Bei Suche nach Anliegern von Straße Hausnummern mit hervorheben</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_live_hnr">
+               <property name="text">
+                <string>Hausnummern Live Anzeige (Performante DB Verbindung!)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_zoom_map">
+               <property name="text">
+                <string>Karte zur Auswahl verschieben</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_hnrBereich">
+               <property name="text">
+                <string>Freilassen 'von' oder 'bis' sucht Hausnummernbereich</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_hnrGenau">
+               <property name="text">
+                <string>Freilassen 'von' oder 'bis' sucht genau eine Hausnummer</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_search_oddeven">
+               <property name="text">
+                <string>Bei Hausnummernbereich nur gerade oder ungerade suchen</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_12">
+            <attribute name="title">
+             <string>Baum</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QCheckBox" name="cb_clean_tree">
+               <property name="text">
+                <string>Vor Bestandsdatenauskunft Baumansicht säubern</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_highlight_all">
+               <property name="text">
+                <string>Alle Flurstücke hervorheben, wenn Kopfzeile gewählt wird</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>184</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_13">
+            <attribute name="title">
+             <string>Tabelle</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QCheckBox" name="cb_clean_tab">
+               <property name="text">
+                <string>Vor Bestandsauskunft Tabellenansicht säubern</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_query_headline">
+               <property name="text">
+                <string>Art der Abfrage und Zeitstempel als Tabellenzeile (Trenner)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_highlight_headline">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Kopfzeilen in Tabelle hervorheben</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_alter_colors">
+               <property name="text">
+                <string>Flurstücke in Tabelle alterierend hervorheben</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_export_formatting">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Formatierungen mitexportieren</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="cb_fill_each_line">
+               <property name="text">
+                <string>Jede Zeile komplett befüllen</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>92</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_14">
+            <attribute name="title">
+             <string>Ausgabe</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="title">
+                <string>csv</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>Texte einschliessen in</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit_10"/>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_16">
+                  <property name="text">
+                   <string>Spaltentrennzeichen</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="lineEdit_11"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -27,7 +27,7 @@ changelog=0.9.72b
     - aktive Tabs beim nächsten Start wiederherstellen
     0.9.71b
     - Änderung GUI Flurstücksuche
-    - zähler, nenner, gmk können jeweils offen bleiben
+    - Zähler, Nenner, Gmkg können jeweils offen bleiben
     - Allgemeiner Ansatz für Gemarkungsnamen
     - Ergebnisausgabe mit Gemarkungsschlüssel:Flurstücksanzahl
     0.9.70b
